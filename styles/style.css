@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Syne, sans-serif;
+    font-weight: 500;
+    background: rgba(253, 251, 245, 1);
+}
+
+@font-face {
+    font-family: Syne, sans-serif;
+    src: url("../fonts/Syne.ttf");
+}
+
+@font-face {
+    font-family: PlusJakartaSans-Regular, sans-serif;
+    src: url("../fonts/PlusJakartaSans-Regular.ttf");
+}
+
+.container {
+    margin: 30px auto;
+    padding: 30px 65px 50px 64px;
+    max-width: 1300px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.button {
+    background: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: rgba(68, 68, 68, 1);
+}
+
+
+/*HEADER*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding-bottom: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    grid-gap: 20px;
+    padding: 0 28px 0 0;
+    position: relative;
+}
+
+.nav:before {
+    content: '';
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav_item a {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: rgba(68, 68, 68, 1);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s linear;
+}
+
+.nav_item a:hover {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.nav_item span svg {
+    vertical-align: middle;
+}
+
+.pages {
+    display: none;
+}
+
+.pages li {
+    margin-bottom: 10px;
+}
+
+.pages li:last-child {
+    margin-bottom: 0px;
+}
+
+.nav_pages {
+    display: block;
+    padding: 15px;
+    background:rgba(0, 0, 0, 1);
+    /*background: rgba(253, 251, 245, 1);*/
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    position: absolute;
+    left: 168px;
+    top: 24px;
+    z-index: 99;
+}
+.nav_pages li a{
+    color: #FFFFFF;
+}
+.nav_pages li a:hover{
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.header_button {
+    padding: 10px 18px 11px;
+    margin: 0 30px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.3s linear;
+}
+
+
+.social {
+    display: flex;
+    grid-gap: 15px;
+    padding-left: 31px;
+    position: relative;
+}
+
+.social a {
+    font-size: 0;
+}
+
+.social:before {
+    content: '';
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 1);
+    transition: 0.3s linear;
+}
+
+.social_item:hover {
+    background: rgba(0, 0, 0, 1);
+}
+
+.social_item:hover a svg path {
+    fill: white;
+}
+
+/*MAIN*/
+.main {
+    padding-top: 181px;
+    position: relative;
+}
+
+.main_title {
+    font-family: Syne, serif;
+    margin: 0 auto;
+    padding-bottom: 34px;
+    max-width: 694px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 96px;
+}
+.main_title span {
+    display: block;
+}
+
+.icon_main {
+    position: absolute;
+    top: 100px;
+    right: 215px;
+}
+
+.main_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content_item {
+    padding-top: 45px;
+}
+
+.image_main_small {
+    width: 370px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+}
+
+.main_content_text {
+    margin: 0;
+    padding-bottom: 39px;
+    max-width: 470px;
+    font-family: PlusJakartaSans-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.image_main_big {
+    max-width: 570px;
+    height: 370px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.button_main {
+    font-family: Syne, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 14px 21px;
+    border: none;
+    transition: 0.3s linear;
+}
+
+.button_main span {
+    display: inline-block;
+    padding-left: 14px;
+}
+
+.icon_main_bottom {
+    position: absolute;
+    left: -24px;
+    bottom: -20px;
+}
+
+.scroll {
+    position: absolute;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 5px;
+    transform: rotate(-90deg);
+    bottom: 46px;
+    left: calc(50% - 47px);
+    cursor: pointer;
+}
+
+.scroll svg {
+    transform: rotate(90deg);
+    vertical-align: middle;
+}
