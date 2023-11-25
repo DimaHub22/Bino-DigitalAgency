@@ -1,4 +1,7 @@
-import '../styles/style.css'
+import './index.html';
+import './styles/style.scss';
+
+
 
 
 let pages = document.getElementById('pages');
