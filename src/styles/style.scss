@@ -1,3 +1,5 @@
+@import "root";
+
 body {
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ body {
 }
 
 .button {
-  background: rgba(0, 0, 0, 1);
+  background: $background-btn;
   border-radius: 5px;
   color: rgba(255, 255, 255, 1);
   transition: 0.3s;
@@ -41,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid $color-border;
   padding-bottom: 30px;
 }
 
@@ -60,7 +62,7 @@ body {
 .nav:before {
   content: '';
   height: 25px;
-  border: 1px solid rgba(0, 0, 0, 1);
+  border: 1px solid $color-border;
   position: absolute;
   right: 0;
   top: -4px;
@@ -81,7 +83,7 @@ body {
 
 .nav_item a:hover {
   color: rgba(0, 0, 0, 1);
-  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  border-bottom: 2px solid $color-border;
 }
 
 .nav_item span svg {
@@ -105,7 +107,7 @@ body {
   padding: 15px;
   background: rgba(0, 0, 0, 1);
   /*background: rgba(253, 251, 245, 1);*/
-  border: 1px solid rgba(0, 0, 0, 1);
+  border: 1px solid $color-border;
   border-radius: 5px;
   position: absolute;
   left: 168px;
@@ -147,7 +149,7 @@ body {
 .social:before {
   content: '';
   height: 25px;
-  border: 1px solid rgba(0, 0, 0, 1);
+  border: 1px solid $color-border;
   position: absolute;
   left: 0;
   top: 9px;
@@ -160,7 +162,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 1);
+  border: 1px solid $color-border;
   transition: 0.3s linear;
 }
 
@@ -186,6 +188,7 @@ body {
   text-align: center;
   font-size: 80px;
   line-height: 96px;
+  color: $color-title;
 }
 
 .main_title span {
@@ -227,7 +230,7 @@ body {
   font-family: PlusJakartaSans-Regular, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: rgba(51, 51, 51, 1);
+  color: $color-text;
 }
 
 .image_main_big {
@@ -282,8 +285,8 @@ body {
 .client {
   margin-top: 71px;
   padding: 71px 0 70px 0;
-  border-top: 1px solid rgba(0, 0, 0, 1);
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,7 +307,7 @@ body {
 .client-text:before {
   content: '';
   height: 100px;
-  border-right: 1px solid rgba(0, 0, 0, 1);
+  border-right: 1px solid $color-border;
   position: absolute;
   right: -49px;
   top: -27px;
@@ -326,7 +329,7 @@ body {
   justify-content: space-between;
   padding-top: 68px;
   padding-bottom: 76px;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid $color-border;
 }
 
 .featured_work_description {
@@ -337,7 +340,7 @@ body {
   font-family: PlusJakartaSans-Regular, sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
-  color: rgba(51, 51, 51, 1);
+  color: $color-text;
 }
 
 .featured_work_description h2 {
@@ -355,9 +358,9 @@ body {
   padding-bottom: 39px;
   width: 370px;
   font-family: PlusJakartaSans-Regular, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
-  color: rgba(51, 51, 51, 1);
+  color: $color-text;
 }
 
 
@@ -381,7 +384,7 @@ body {
 
 .branding:before {
   content: '';
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid $color-border;
   width: 250px;
   position: absolute;
   bottom: -45px;
@@ -394,7 +397,7 @@ body {
 
 .ui-desing:after {
   content: '';
-  border-left: 1px solid rgba(0, 0, 0, 1);
+  border-left: 1px solid $color-border;
   height: 150px;
   position: absolute;
   bottom: 0px;
@@ -407,7 +410,7 @@ body {
 
 .marketing:after {
   content: '';
-  border-left: 1px solid rgba(0, 0, 0, 1);
+  border-left: 1px solid $color-border;
   height: 150px;
   position: absolute;
   bottom: 0px;
@@ -420,7 +423,7 @@ body {
 
 .content:after {
   content: '';
-  border-top: 1px solid rgba(0, 0, 0, 1);
+  border-top: 1px solid $color-border;
   width: 250px;
   position: absolute;
   top: -45px;
@@ -448,7 +451,7 @@ body {
   font-weight: 300;
   font-size: 30px;
   line-height: 42px;
-  color: rgba(0, 0, 0, 1);
+  color: $color-title;
 }
 
 .featured_item p {
@@ -457,7 +460,7 @@ body {
   font-family: PlusJakartaSans-Regular, sans-serif;
   font-size: 14px;
   line-height: 19px;
-  color: rgba(51, 51, 51, 1);
+  color: $color-text;
 }
 
 .featured_item a {
@@ -477,4 +480,118 @@ body {
   height: 12px;
   top: -1px;
   right: -14px;
+}
+
+//PORTFOLIO
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  padding: 76px 0 81px 0;
+  border-bottom: 1px solid $color-border;
+  position: relative;
+}
+
+.portfolio_items {
+  padding-left: 65px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 41px;
+  border-left: 1px solid $color-border;
+  width: 670px;
+}
+
+.portfolio_item {
+  max-width: 670px;
+  height: 150px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  transition: 0.5s linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio_item_section {
+  height: 390px;
+}
+
+.portfolio_item_image {
+  max-width: 670px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+
+.portfolio_item_image img {
+  width: 100%;
+}
+
+.portfolio_image {
+  height: 300px;
+}
+
+.portfolio_item_action {
+  padding: 28px 18px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s linear;
+}
+
+.portfolio_action {
+  display: flex;
+}
+
+.portfolio_action p {
+  transform: translateX(-50%);
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.portfolio_action button {
+  transform: translateX(50%);
+  animation: ani2 1s forwards;
+}
+
+@keyframes ani2 {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.portfolio_item_action p {
+  margin: 0;
+  font-family: Syne, serif;
+  font-size: 24px;
+  color: $color-text;
+  transition: 1s linear;
+}
+
+.portfolio_item_action button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.portfolio_item_action button img {
+  margin-left: 14px;
+}
+
+.icon_portfolio {
+  position: absolute;
+  left: -24px;
+  bottom: 76px;
 }

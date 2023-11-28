@@ -27,3 +27,18 @@ document.addEventListener('click', function (e) {
         svg.style.transform = 'rotate(0deg)'
     }
 })
+
+let portfolioItem = document.querySelectorAll('.portfolio_item')
+portfolioItem.forEach(item => {
+    item.addEventListener('click', ()=>{
+        portfolioItem.forEach(el =>{
+            el.classList.remove('portfolio_item_section');
+            el.querySelector('.portfolio_item_image').classList.remove('portfolio_image');
+            el.querySelector('.portfolio_item_action').classList.remove('portfolio_action')
+        })
+        item.classList.add('portfolio_item_section')
+        item.querySelector('.portfolio_item_image').classList.add('portfolio_image');
+        item.querySelector('.portfolio_item_action').classList.add('portfolio_action');
+    })
+
+})
