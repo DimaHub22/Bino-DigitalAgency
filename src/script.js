@@ -1,7 +1,8 @@
 import './index.html';
 import './styles/style.scss';
 
-
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 
 let pages = document.getElementById('pages');
@@ -42,3 +43,29 @@ portfolioItem.forEach(item => {
     })
 
 })
+ const swipe = new Swiper('.swiper', {
+     modules: [ Navigation, Pagination ],
+
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+     slidesPerView: 'auto',
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+
+     spaceBetween: 0
+});
+
