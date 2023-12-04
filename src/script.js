@@ -33,6 +33,8 @@ const portfolioView = document.querySelectorAll('.portfolio_view');
 const closeView = document.getElementById('closeView');
 const modalView = document.querySelector('.modal_view');
 
+const talkForm = document.querySelector('.talk_form')
+
 closeView.addEventListener('click',()=>{
     modalView.style.display = 'none'
 })
@@ -64,6 +66,7 @@ btnSend.addEventListener('click', () => {
     form.reset()
     form.style.display = "none"
     titleForm.innerHTML = "Thanks for your question!";
+    talkForm.style.height = 'auto'
     setTimeout(() => {
         modal.style.display = 'none'
     }, 2000)
